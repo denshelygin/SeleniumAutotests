@@ -1,0 +1,43 @@
+2024-04-26- 14:31:33 INFO ====== WebDriver manager ======
+2024-04-26- 14:31:34 INFO Get LATEST chromedriver version for google-chrome
+2024-04-26- 14:31:34 INFO Get LATEST chromedriver version for google-chrome
+2024-04-26- 14:31:34 INFO Driver [C:\Users\я\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache
+2024-04-26- 14:31:35 INFO test_login_negative starting
+2024-04-26- 14:31:37 INFO test_login_positive starting
+2024-04-26- 14:31:39 INFO test_add_post starting
+2024-04-26- 14:31:43 INFO test_delete_post starting
+2024-04-26- 14:31:53 ERROR Find element exception
+Traceback (most recent call last):
+  File "C:\Users\я\Desktop\PyCharmProject\Selenium\BaseApp.py", line 14, in find_element
+    element = WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\я\Desktop\PyCharmProject\Selenium\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="app"]/main/div/div[3]/div[1]/a[1]/h2')
+Stacktrace:
+	GetHandleVerifier [0x011AC113+48259]
+	(No symbol) [0x0113CA41]
+	(No symbol) [0x01030A17]
+	(No symbol) [0x01070BED]
+	(No symbol) [0x01070C9B]
+	(No symbol) [0x010ABC12]
+	(No symbol) [0x01090DE4]
+	(No symbol) [0x010A9B9C]
+	(No symbol) [0x01090B36]
+	(No symbol) [0x0106570D]
+	(No symbol) [0x010662CD]
+	GetHandleVerifier [0x01466533+2908323]
+	GetHandleVerifier [0x014A3B4B+3159739]
+	GetHandleVerifier [0x0124505B+674763]
+	GetHandleVerifier [0x0124B21C+699788]
+	(No symbol) [0x01146244]
+	(No symbol) [0x01142298]
+	(No symbol) [0x0114242C]
+	(No symbol) [0x01134BB0]
+	BaseThreadInitThunk [0x76E9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77DE7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DE7C2E+238]
+
+2024-04-26- 14:31:54 INFO test_add_contact starting
+2024-04-26- 14:31:56 INFO Get alert message
+2024-04-26- 14:31:56 INFO Alert message is Form successfully submitted
